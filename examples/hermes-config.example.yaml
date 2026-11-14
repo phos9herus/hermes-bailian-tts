@@ -1,0 +1,27 @@
+# Hermes TTS 配置示例：把百炼语音接成命令型 provider
+#
+# 写入方式（推荐用 CLI，别手改 config.yaml）：
+#   hermes config set tts.provider bailian
+#   hermes config set tts.providers.bailian '{...下面的 bailian 块...}' --force
+#
+# 把 <REPO> 换成本仓库 clone 下来的绝对路径。
+
+tts:
+  provider: bailian
+
+  providers:
+    bailian:
+      type: command
+      # {input_path} {output_path} {format} {voice} {speed} 由 Hermes 渲染并 shell 转义
+      command: '"<REPO>\bailian-tts.cmd" say --text-file {input_path} --out {output_path} --format {format} --voice {voice} --speed {speed}'
+
+      # 留空则回落到 profiles.json 里本 profile 的指定 / voices.json 的全局 active
+      voice: ''
+      model: ''
+
+      format: mp3        # 支持 mp3 / wav / pcm / opus
+      timeout: 300       # 这是「空闲超时」：脚本合成期间不输出，所以要给足
+      voice_compatible: true   # 让 Hermes 转 48k opus，语音气泡与内嵌播放器都能播（需要 ffmpeg）
+      max_text_length: 5000    # 让「整段翻译」看到完整上下文；超长才由 Hermes 分块
+      env_passthrough:
+        - DASHSCOPE_API_KEY    # Hermes 会清空子进程环境，不放行就拿不到 key
