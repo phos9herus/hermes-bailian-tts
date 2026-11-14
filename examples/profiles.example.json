@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "profiles": {
+    "default": {
+      "voice": "longanhuan_v3.1",
+      "language": "zh",
+      "translate": true,
+      "tags": true,
+      "cache": true,
+      "updated": "2026-01-01 00:00:00"
+    },
+    "another-profile": {
+      "voice": "<your-cloned-voice-id>",
+      "language": "ja",
+      "translate": true,
+      "tags": true,
+      "cache": true,
+      "updated": "2026-01-01 00:00:00"
+    }
+  }
+}
