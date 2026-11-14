@@ -1,0 +1,23 @@
+# 运行期状态（含账号相关的音色 id），不入库
+voices.json
+profiles.json
+out/
+**/tts_cache/
+__pycache__/
+*.pyc
+*.log
+
+# 本地音频产物
+*.mp3
+*.wav
+*.ogg
+*.opus
+*.m4a
+!examples/**/*.json
+
+# 环境与编辑器
+.env
+.venv/
+.idea/
+.vscode/
+.DS_Store
