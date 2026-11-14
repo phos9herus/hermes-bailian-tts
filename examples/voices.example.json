@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "endpoint": "https://dashscope.aliyuncs.com/api/v1",
+  "default_model": "qwen-audio-3.1-tts-flash",
+  "active": "longanhuan_v3.1",
+  "voices": {
+    "longanhuan_v3.1": {
+      "kind": "system",
+      "model": "qwen-audio-3.1-tts-flash",
+      "display": "龙安欢_v3.1",
+      "gender": "女",
+      "langs": [
+        "zh",
+        "en",
+        "ja",
+        "ko",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "vi",
+        "id"
+      ],
+      "dialects": [
+        "重庆话",
+        "宁波话"
+      ],
+      "note": "活泼、偏快；方言与多语种需配合 --language 或 --instruction",
+      "instruction": "",
+      "language": null
+    },
+    "longanlingxin_v3.1": {
+      "kind": "system",
+      "model": "qwen-audio-3.1-tts-flash",
+      "display": "龙安灵心_v3.1",
+      "gender": "女",
+      "langs": [
+        "zh",
+        "en",
+        "ja",
+        "ko",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "vi",
+        "id"
+      ],
+      "dialects": [
+        "云南话",
+        "陕西话",
+        "上海话"
+      ],
+      "note": "温柔知性",
+      "language": null,
+      "instruction": ""
+    },
+    "longanfengyue_v3.1": {
+      "kind": "system",
+      "model": "qwen-audio-3.1-tts-flash",
+      "display": "龙安风悦_v3.1",
+      "gender": "女",
+      "langs": [
+        "zh",
+        "en",
+        "ja",
+        "ko",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "vi",
+        "id"
+      ],
+      "dialects": [
+        "东北话",
+        "越南语支持"
+      ],
+      "note": "播报感强",
+      "language": null,
+      "instruction": ""
+    },
+    "xunanchuan_v3.1": {
+      "kind": "system",
+      "model": "qwen-audio-3.1-tts-flash",
+      "display": "许南川",
+      "gender": "男",
+      "langs": [
+        "zh",
+        "en",
+        "ja",
+        "ko",
+        "fr",
+        "de",
+        "pt",
+        "it",
+        "vi",
+        "id"
+      ],
+      "dialects": [
+        "甘肃话",
+        "东北话"
+      ],
+      "note": "磁性男声",
+      "language": null,
+      "instruction": ""
+    },
+    "Bella_v3.1": {
+      "kind": "system",
+      "model": "qwen-audio-3.1-tts-flash",
+      "display": "Bella_v3.1",
+      "gender": "女",
+      "langs": [
+        "zh",
+        "en"
+      ],
+      "dialects": [],
+      "note": "中英双语音色",
+      "language": null,
+      "instruction": ""
+    },
+    "<your-cloned-voice-id>": {
+      "kind": "clone",
+      "model": "qwen-audio-3.1-tts-flash",
+      "status": "OK",
+      "display": "my-cloned-voice",
+      "langs": [],
+      "dialects": [],
+      "language": null,
+      "instruction": ""
+    }
+  }
+}
